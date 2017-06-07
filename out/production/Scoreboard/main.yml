@@ -1,0 +1,78 @@
+#
+#  ________  ________  ________  ________  _______   ________  ________  ________  ________  ________
+# |\   ____\|\   ____\|\   __  \|\   __  \|\  ___ \ |\   __  \|\   __  \|\   __  \|\   __  \|\   ___ \
+# \ \  \___|\ \  \___|\ \  \|\  \ \  \|\  \ \   __/|\ \  \|\ /\ \  \|\  \ \  \|\  \ \  \|\  \ \  \_|\ \
+#  \ \_____  \ \  \    \ \  \\\  \ \   _  _\ \  \_|/_\ \   __  \ \  \\\  \ \   __  \ \   _  _\ \  \ \\ \
+#   \|____|\  \ \  \____\ \  \\\  \ \  \\  \\ \  \_|\ \ \  \|\  \ \  \\\  \ \  \ \  \ \  \\  \\ \  \_\\ \
+#    ____\_\  \ \_______\ \_______\ \__\\ _\\ \_______\ \_______\ \_______\ \__\ \__\ \__\\ _\\ \_______\
+#    |\_________\|_______|\|_______|\|__|\|__|\|_______|\|_______|\|_______|\|__|\|__|\|__|\|__|\|_______|
+#   \|_________|
+
+# Board declares a new Scoreboard instance
+board:
+  # Every board contains 'Lines', they are kept in order by the line identifier
+  # Every line must have an unique identifier, or strange things will happen.
+  # The line identifiers declare the weight of the line, the lower the identifier
+  # the higher they will appear in the Scoreboard. The line with weight '1' will be the
+  # scoreboard title.
+  '1':
+    # Every line contains 'animatables', this is specified by the field 'content'.
+    # Animatables will change the line every few ticks (specified by the 'update field')
+    # this way you can animate each line just the way you wan't it to.
+    content:
+      - '&4> &c&lScoreboard &4<'
+      - '&4> &c&lcoreboar &4<'
+      - '&4> &c&loreboa &4<'
+      - '&4> &c&leb &4<'
+      - '&4> &4<'
+      - '&4> &c&leb &4<'
+      - '&4> &c&loreboa &4<'
+      - '&4> &c&lcoreboar &4<'
+      - '&4> &4&lScoreboard &4<'
+      - '&4> &c&lScoreboard &4<'
+      - '&4> &4&lScoreboard &4<'
+      - '&4> &c&lScoreboard &4<'
+      - '&4> &4&lScoreboard &4<'
+      - '&4> &c&lScoreboard &4<'
+      - '&4> &c&lScoreboard &4<'
+      - '&4> &c&lScoreboard &4<'
+    # 1 second equals 20 ticks
+    update: 3
+  '2':
+    content:
+      - '                '
+    update: 1000
+  '3':
+    content:
+      - '&c&lAuthor'
+      - '&c&lYour name'
+    update: 120
+  '4':
+    content:
+      - ' HelloitsRien'
+      - ' %player_name%'
+    update: 120
+  '5':
+    content:
+      - ''
+    update: 1000
+  '6':
+    content:
+      - '&c&lPing'
+    update: 1000
+  '7':
+    content:
+      - ' %player_ping% ms'
+    update: 3
+  '8':
+    content:
+      - ''
+    update: 1000
+  '9':
+    content:
+      - '&c&lUptime'
+    update: 1000
+  '10':
+    content:
+      - ' %server_uptime%'
+    update: 1000
