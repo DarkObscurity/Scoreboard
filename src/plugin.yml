@@ -1,4 +1,4 @@
 name: Scoreboard
 version: 1.4
-main: com.github.rienbijl.Scoreboard.Main
+main: eu.rhbict.Scoreboard.Main
 softdepend: [PlaceholderAPI, MVdWPlaceholderAPI, McMMO]

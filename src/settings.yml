@@ -10,9 +10,11 @@
 
 
 settings:
-  # By enabling lagg prevention Scoreboard will run asynchroniously
-  # This means that it does not obstruct the main thread and thus causes a *LOT* let lagg.
-  lag-prevention: true
+  # What should be the default scoreboard?
+  default-scoreboard: 'default'
+  # Should we disable Scoreboard in certain worlds?
+  disabled-worlds:
+    - '1234'
 
 hooks:
    # To what plugins should we hook into?

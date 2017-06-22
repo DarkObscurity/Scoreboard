@@ -1,6 +1,5 @@
-package com.github.rienbijl.Scoreboard;
+package eu.rhbict.Scoreboard;
 
-import com.sun.corba.se.impl.presentation.rmi.ExceptionHandler;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
@@ -8,7 +7,7 @@ import java.io.*;
 import java.util.HashMap;
 
 /**
- * Created by Rien on 15-5-2017.
+ * Created by Rien on 20-6-2017.
  */
 public class ConfigControl {
 
@@ -36,9 +35,12 @@ public class ConfigControl {
         if(!Main.instance.getDataFolder().exists())
             Main.instance.getDataFolder().mkdir();
 
+        if(new File(Main.instance.getDataFolder(), "boards").exists())
+            new File(Main.instance.getDataFolder(), "boards").mkdirs();
 
-        createConfigFile("settings");
-        createConfigFile("main");
+
+        createConfigFile("settings", "settings");
+        createConfigFile("board_default", "board_default");
     }
 
     public void purge()
@@ -46,7 +48,7 @@ public class ConfigControl {
         designations.clear();
     }
 
-    public void createConfigFile(String name)
+    public void createConfigFile(String name, String id)
     {
         File f = new File(Main.instance.getDataFolder(), name + ".yml");
 
@@ -60,13 +62,13 @@ public class ConfigControl {
             }
         } catch (IOException ex)
         {
-           ex.printStackTrace();
+            ex.printStackTrace();
         }
 
         if(needCopyDefaults)
         {
             try {
-                Reader defConfigStream = new InputStreamReader(ConfigControl.class.getResourceAsStream("/" + name + ".yml"), "UTF-8");
+                Reader defConfigStream = new InputStreamReader(ConfigControl.class.getResourceAsStream("/" + id + ".yml"), "UTF-8");
                 PrintWriter writer = new PrintWriter(f, "UTF-8");
                 writer.print(read(defConfigStream));
                 writer.close();
