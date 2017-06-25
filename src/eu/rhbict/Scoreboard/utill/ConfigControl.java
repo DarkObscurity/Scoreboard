@@ -1,5 +1,6 @@
-package eu.rhbict.Scoreboard;
+package eu.rhbict.Scoreboard.utill;
 
+import eu.rhbict.Scoreboard.Main;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 

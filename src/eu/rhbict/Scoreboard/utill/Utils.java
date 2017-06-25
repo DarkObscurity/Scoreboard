@@ -1,4 +1,4 @@
-package eu.rhbict.Scoreboard;
+package eu.rhbict.Scoreboard.utill;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

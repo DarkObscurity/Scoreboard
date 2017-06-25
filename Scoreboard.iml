@@ -10,18 +10,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://Z:/JAR's/spigot-1.8.8.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://Z:/JAR's/spigot-1.8.8.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://Z:/JAR's/MVdWPlaceholderAPI.jar!/" />
+          <root url="jar://C:/Jars/MVdWPlaceholderAPI (2).jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -30,7 +19,18 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://Z:/JAR's/PlaceholderAPI.jar!/" />
+          <root url="jar://C:/Jars/spigot-1.8.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://C:/Jars/spigot-1.8.8.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Jars/PlaceholderAPI-2.8.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
